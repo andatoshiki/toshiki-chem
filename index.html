@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      auto2top: true,
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      subMaxLevel: 3,
+      maxLevel: 4
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+
+  <!--Gitalk-->
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+    clientID: '46e7167a235eadec396d',
+    clientSecret: 'a1a7d79195a7b0da1f82c16ab4a21768d24ab214',
+    repo: 'toshiki-chem',
+    owner: 'andatoshiki',
+    admin: ['andatoshiki'],
+    // facebook-like distraction free mode
+    distractionFreeMode: false
+  })
+  </script>
+  <style>
+    .katex-display > .katex {
+      display: inline-block;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow-x: scroll;
+      text-align: initial;
+    }
+    .katex {
+      font: normal 1.21em KaTeX_Main, Times New Roman, serif;
+      line-height: 1.2;
+      white-space: normal;
+      text-indent: 0;
+    }
+  </style>
+</body>
+</html>
