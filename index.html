@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
+  <!-- docsify basics -->
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -24,14 +25,13 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- CDN files for docsify-katex -->
+
+  <!-- plugin-docsify KaTeX -->
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
 
-  <!--Gitalk-->
+  <!-- plugin-docsify-Gitalk -->
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script>
@@ -45,6 +45,9 @@
     distractionFreeMode: false
   })
   </script>
+
+  <!-- extra configured styles -->
+  <!-- KaTeX responsive (prevent equations from overflowing out of the page) -->
   <style>
     .katex-display > .katex {
       display: inline-block;
